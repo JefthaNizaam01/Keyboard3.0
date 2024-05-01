@@ -1,0 +1,175 @@
+*,
+* ::before,
+* ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: black;
+}
+
+:root {
+    --keyboard-bg-color: #202020;
+    --key-bg-color: black;
+    --key-color: red;
+    --lock-on-color: black;
+    --font-a: 'vr-a', sans-serif;
+    --font-b: 'vr-b', sans-serif;
+  }
+
+  .keyboard-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    }
+
+  .keyboard {
+    background-color: var(--keyboard-bg-color);
+    width: 1250px;
+    margin: 75px auto;
+    padding: 20px 10px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2),
+      0 40px 77px 0 rgba(0, 0, 0, 0.22);
+  }
+
+  .key {
+    background-color: var(--key-bg-color);
+    color: var(--key-color);
+    font-family: var(--font-b);
+    font-size: 12px;
+    height: 41px;
+    width: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 4px;
+    padding: 0 2px;
+    border-radius: 11px;
+    box-shadow: 5px 5px 10px red, -5px -5px 10px red;
+  }
+  
+  
+  .row {
+    display: grid;
+    grid-template-columns: auto 0.2fr 0.2fr;
+    grid-gap: 25px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .group,
+  .mini-group {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .mini-group {
+    margin-left: 28px;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -173px;
+  }
+  .key:active{
+    transform: translateY(2px) scale(0.98);
+    border-bottom-width: 2px;
+  }
+  .key-empty {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .key i {
+    margin-top: 1px;
+  }
+  
+  .key.large {
+    padding-top: 5px;
+    font-size: 18px;
+  }
+  
+  .key.large i {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  
+  i.underscore {
+    margin-top: -8px;
+  }
+  
+  .spacebar {
+    width: 405px;
+    font-size: 18px;
+  }
+  
+  .shift {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .backspace,
+  .tab {
+    width: 80px;
+  }
+  
+  .enter {
+    width: 100px;
+  }
+  
+  .l-s {
+    width: 95px;
+  }
+  
+  .r-s {
+    width: 140px;
+  }
+   
+  .num-special {
+    justify-content: flex-start;
+    padding-top: 5px;
+  }
+  
+  .num-ins {
+    width: 100px;
+  }
+  
+  .num-large {
+    margin-bottom: -58px;
+    height: 100px;
+  } 
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
